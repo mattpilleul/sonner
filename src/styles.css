@@ -402,6 +402,10 @@ html[dir='rtl'],
   --warning-border: hsl(56, 100%, 91%);
   --warning-text: hsl(48, 100%, 47%);
 
+  --info-bg: hsl(203, 100%, 97%);
+  --info-border: hsl(203, 100%, 94%);
+  --info-text: hsl(204, 100%, 46%);
+
   --error-bg: hsl(359, 100%, 97%);
   --error-border: hsl(359, 100%, 94%);
   --error-text: hsl(360, 100%, 45%);
@@ -455,6 +459,18 @@ html[dir='rtl'],
   background: var(--warning-bg);
   border-color: var(--warning-border);
   color: var(--warning-text);
+}
+
+[data-rich-colors='true'] [data-sonner-toast][data-type='info'] {
+  background: var(--info-bg);
+  border-color: var(--info-border);
+  color: var(--info-text);
+}
+
+[data-rich-colors='true'] [data-sonner-toast][data-type='info'] [data-close-button] {
+  background: var(--info-bg);
+  border-color: var(--info-border);
+  color: var(--info-text);
 }
 
 [data-rich-colors='true'] [data-sonner-toast][data-type='error'] {
