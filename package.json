@@ -1,6 +1,6 @@
 {
   "name": "@mattpilleul/sonner",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An opinionated toast component for React.",
   "exports": {
     "types": "./dist/index.d.ts",
