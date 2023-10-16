@@ -94,8 +94,8 @@ class Observer {
     return this.create({ ...data, type: 'warning', message });
   };
 
-  info = (message: string | React.ReactNode, data?: ExternalToast) => {
-    return this.create({ ...data, type: 'info', message });
+  information = (message: string | React.ReactNode, data?: ExternalToast) => {
+    return this.create({ ...data, type: 'information', message });
   };
 
   loading = (message: string | React.ReactNode, data?: ExternalToast) => {
@@ -176,7 +176,7 @@ const basicToast = toastFunction;
 export const toast = Object.assign(basicToast, {
   success: ToastState.success,
   warning: ToastState.warning,
-  info: ToastState.info,
+  information: ToastState.information,
   error: ToastState.error,
   custom: ToastState.custom,
   message: ToastState.message,

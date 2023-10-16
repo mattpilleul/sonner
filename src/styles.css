@@ -461,13 +461,13 @@ html[dir='rtl'],
   color: var(--warning-text);
 }
 
-[data-rich-colors='true'] [data-sonner-toast][data-type='info'] {
+[data-rich-colors='true'] [data-sonner-toast][data-type='information'] {
   background: var(--info-bg);
   border-color: var(--info-border);
   color: var(--info-text);
 }
 
-[data-rich-colors='true'] [data-sonner-toast][data-type='info'] [data-close-button] {
+[data-rich-colors='true'] [data-sonner-toast][data-type='information'] [data-close-button] {
   background: var(--info-bg);
   border-color: var(--info-border);
   color: var(--info-text);

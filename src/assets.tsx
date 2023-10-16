@@ -13,7 +13,7 @@ export const getAsset = (type: ToastTypes): JSX.Element | null => {
     case 'warning':
       return WarningIcon;
 
-    case 'info':
+    case 'information':
       return InfoIcon;
 
     default:

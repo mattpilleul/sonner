@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type ToastTypes = 'normal' | 'action' | 'success' | 'error' | 'loading' | 'warning' | 'info';
+export type ToastTypes = 'normal' | 'action' | 'success' | 'error' | 'warning' | 'information' | 'loading';
 
 export type PromiseT<Data = any> = Promise<Data> | (() => Promise<Data>);
 
@@ -8,7 +8,7 @@ export type PromiseData<ToastData = any> = ExternalToast & {
   loading: string | React.ReactNode;
   success: string | React.ReactNode | ((data: ToastData) => React.ReactNode | string);
   warning: string | React.ReactNode | ((data: ToastData) => React.ReactNode | string);
-  info: string | React.ReactNode | ((data: ToastData) => React.ReactNode | string);
+  information: string | React.ReactNode | ((data: ToastData) => React.ReactNode | string);
   error: string | React.ReactNode | ((error: any) => React.ReactNode | string);
   finally?: () => void | Promise<void>;
 };
